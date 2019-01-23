@@ -57,7 +57,7 @@ for i = 0:203
                         for q = 1:sizeY
                             if mask(p,q)==1
                                 % to be used by ITK, so keep (0,0,0) index
-                                fprintf(fileSegIndex, '%d %d %d\n', p-1, q-1, sliceNum-1);
+                                fprintf(fileSegIndex, '%d %d %d\n', q-1, p-1, sliceNum);
                             end
                         end
                     end
